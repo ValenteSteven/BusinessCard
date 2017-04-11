@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button buttonCreateCard ;
     Button buttonSendCard;
+    Button buttonContact;
 
 
     @Override
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         buttonCreateCard = (Button)findViewById(R.id.buttonCreateCard);
         buttonSendCard = (Button)findViewById(R.id.buttonSendCard);
+        buttonContact = (Button)findViewById(R.id.buttonMyContact);
 
 
         buttonCreateCard .setOnClickListener(new View.OnClickListener() {
@@ -36,6 +38,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), SmsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        buttonContact .setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), ContactActivity.class);
                 startActivity(intent);
             }
         });
