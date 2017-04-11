@@ -1,4 +1,4 @@
-package com.example.reiko.businesscard;
+package com.example.reiko.businesscard.Activity;
 
 import android.content.ContentValues;
 import android.content.Intent;
@@ -13,6 +13,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
+import com.example.reiko.businesscard.R;
+import com.example.reiko.businesscard.database.DictionaryOpenHelper;
+import com.example.reiko.businesscard.database.ExampleContract;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.MultiFormatWriter;
 import com.google.zxing.WriterException;

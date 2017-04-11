@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.reiko.businesscard.MainActivity">
+    tools:context="com.example.reiko.businesscard.Activity.MainActivity">
 
     <LinearLayout android:orientation="vertical"
         android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center">

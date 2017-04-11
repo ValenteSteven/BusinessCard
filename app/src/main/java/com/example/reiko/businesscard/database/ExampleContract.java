@@ -1,4 +1,4 @@
-package com.example.reiko.businesscard;
+package com.example.reiko.businesscard.database;
 
 import android.os.Environment;
 import android.provider.BaseColumns;

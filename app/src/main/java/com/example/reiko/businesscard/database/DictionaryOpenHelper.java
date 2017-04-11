@@ -1,4 +1,4 @@
-package com.example.reiko.businesscard;
+package com.example.reiko.businesscard.database;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -17,7 +17,7 @@ public class DictionaryOpenHelper extends SQLiteOpenHelper {
             ExampleContract.ExampleEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
             " ("+DICTIONNARY_KEY_WORD + " TEXT, " + DICTIONNARY_KEY_DEFINITION + " TEXT);";
     public static final String DATABASE_NAME = "example.db";
-    DictionaryOpenHelper(Context context){
+    public DictionaryOpenHelper(Context context){
         super(context,DATABASE_NAME,null, 1);
     }
 
