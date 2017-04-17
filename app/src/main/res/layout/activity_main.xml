@@ -26,10 +26,10 @@
             tools:layout_editor_absoluteY="283dp" />
 
         <Button
-        android:id="@+id/buttonDeleteCard"
+        android:id="@+id/buttonImportCard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="DeleteCard"
+        android:text="import"
         tools:layout_editor_absoluteX="262dp"
         tools:layout_editor_absoluteY="283dp" />
 

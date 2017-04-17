@@ -24,6 +24,16 @@
         </activity>
         <activity android:name=".Activity.ContactActivity">
         </activity>
+        <activity android:name=".Activity.ListCardActivity">
+        </activity>
+        <activity android:name=".Activity.ImportActivity">
+        </activity>
+        <activity android:name=".Activity.EditCardActivity">
+        </activity>
+        <activity android:name=".Activity.SendActivity">
+        </activity>
+        <activity android:name=".Activity.SendChooseCardActivity">
+        </activity>
 
     </application>
 

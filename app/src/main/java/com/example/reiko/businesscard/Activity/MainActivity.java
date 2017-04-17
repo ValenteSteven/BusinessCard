@@ -14,6 +14,8 @@ public class MainActivity extends AppCompatActivity {
     Button buttonCreateCard ;
     Button buttonSendCard;
     Button buttonContact;
+    Button buttonLoad;
+    Button buttonImport;
 
 
     @Override
@@ -24,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
         buttonCreateCard = (Button)findViewById(R.id.buttonCreateCard);
         buttonSendCard = (Button)findViewById(R.id.buttonSendCard);
         buttonContact = (Button)findViewById(R.id.buttonMyContact);
+        buttonLoad = (Button)findViewById(R.id.buttonLoadCard);
+        buttonImport = (Button)findViewById(R.id.buttonImportCard);
 
 
         buttonCreateCard .setOnClickListener(new View.OnClickListener() {
@@ -46,6 +50,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), ContactActivity.class);
+                startActivity(intent);
+            }
+        });
+        buttonLoad.setOnClickListener(new View.OnClickListener(){
+                @Override
+                public void onClick(View view){
+                    Intent intent = new Intent(getApplicationContext(), ListCardActivity.class);
+                    startActivity(intent);
+                }
+        });
+        buttonImport.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(getApplicationContext(), ImportActivity.class);
                 startActivity(intent);
             }
         });
