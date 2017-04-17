@@ -15,7 +15,7 @@ import java.util.List;
 
 public class ElementAdapter extends ArrayAdapter<ElementListView> {
 
-    public ElementAdapter( Context context, List<ElementListView> elements) {
+    public ElementAdapter(Context context, List<ElementListView> elements) {
         super(context, 0, elements);
     }
 

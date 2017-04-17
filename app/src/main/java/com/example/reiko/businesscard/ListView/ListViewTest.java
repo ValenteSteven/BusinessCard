@@ -15,15 +15,9 @@ import java.util.List;
 public class ListViewTest extends AppCompatActivity {
 
     private ListView myListView;
-    String[] prenoms = new String[]{
-            "Antoine", "Benoit", "Cyril", "David", "Eloise", "Florent",
-            "Gerard", "Hugo", "Ingrid", "Jonathan", "Kevin", "Logan",
-            "Mathieu", "Noemie", "Olivia", "Philippe", "Quentin", "Romain",
-            "Sophie", "Tristan", "Ulric", "Vincent", "Willy", "Xavier", "Yann", "Zoé"
-    };
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listview);
         myListView = (ListView) findViewById(R.id.testListView);
@@ -31,9 +25,8 @@ public class ListViewTest extends AppCompatActivity {
     }
 
     private void afficherListeElements(){
-        List<ElementListView> tweets = genererElements();
-
-        ElementAdapter adapter = new ElementAdapter(ListViewTest.this, tweets);
+        List<ElementListView> elementListViews = genererElements();
+        ElementAdapter adapter = new ElementAdapter(ListViewTest.this, elementListViews);
         myListView.setAdapter(adapter);
     }
 
