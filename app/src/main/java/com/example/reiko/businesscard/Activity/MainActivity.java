@@ -6,16 +6,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.reiko.businesscard.ListView.ListViewTest;
 import com.example.reiko.businesscard.R;
 import com.example.reiko.businesscard.SMS.SmsActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button buttonCreateCard ;
-    Button buttonSendCard;
-    Button buttonContact;
-    Button buttonLoad;
-    Button buttonImport;
+    private Button buttonCreateCard ;
+    private Button buttonSendCard;
+    private Button buttonContact;
+    private Button buttonLoad;
+    private Button buttonImport;
+    private Button buttonListView;
 
 
     @Override
@@ -28,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         buttonContact = (Button)findViewById(R.id.buttonMyContact);
         buttonLoad = (Button)findViewById(R.id.buttonLoadCard);
         buttonImport = (Button)findViewById(R.id.buttonImportCard);
+        buttonListView = (Button)findViewById(R.id.buttonListView);
 
 
         buttonCreateCard .setOnClickListener(new View.OnClickListener() {
@@ -64,6 +67,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 Intent intent = new Intent(getApplicationContext(), ImportActivity.class);
+                startActivity(intent);
+            }
+        });
+        buttonListView.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(getApplicationContext(), ListViewTest.class);
                 startActivity(intent);
             }
         });

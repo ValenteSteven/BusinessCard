@@ -34,6 +34,8 @@
         </activity>
         <activity android:name=".Activity.SendChooseCardActivity">
         </activity>
+        <activity android:name=".ListView.ListViewTest">
+        </activity>
 
     </application>
 
