@@ -5,4 +5,5 @@ package com.example.reiko.businesscard.ListView;
  */
 
 public abstract class abstractListViewActivity {
+
 }
