@@ -36,6 +36,8 @@
         </activity>
         <activity android:name=".ListView.ListViewTest">
         </activity>
+        <activity android:name=".Activity.VisitCardActivity">
+        </activity>
 
     </application>
 

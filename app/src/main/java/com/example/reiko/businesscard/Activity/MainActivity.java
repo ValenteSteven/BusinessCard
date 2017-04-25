@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
     private Button buttonLoad;
     private Button buttonImport;
     private Button buttonListView;
+    private Button buttonVisitCard;
+    private Button buttonFragment;
 
 
     @Override
@@ -31,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
         buttonLoad = (Button)findViewById(R.id.buttonLoadCard);
         buttonImport = (Button)findViewById(R.id.buttonImportCard);
         buttonListView = (Button)findViewById(R.id.buttonListView);
+        buttonVisitCard = (Button)findViewById(R.id.buttonVisitCard);
+        buttonFragment = (Button)findViewById(R.id.buttonFragment);
 
 
         buttonCreateCard .setOnClickListener(new View.OnClickListener() {
@@ -74,6 +78,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 Intent intent = new Intent(getApplicationContext(), ListViewTest.class);
+                startActivity(intent);
+            }
+        });
+        buttonVisitCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), VisitCardActivity.class);
+                startActivity(intent);
+            }
+        });
+        buttonFragment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), VisitCardActivity.class);
                 startActivity(intent);
             }
         });

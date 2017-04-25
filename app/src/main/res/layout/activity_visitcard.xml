@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    '<!--'android:background="@mipmap/visitcardbackground1"'-->'
+
+    <ImageView
+        android:id="@+id/splash_imageview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/visitcardbackground1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dip"
+        android:layout_centerInParent="true"
+        android:background="#AA000000"
+        android:padding="12dip"
+        android:text="SomeText"
+        android:textColor="#ffffffff" />
+
+</LinearLayout>

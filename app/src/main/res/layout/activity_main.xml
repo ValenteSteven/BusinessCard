@@ -26,37 +26,60 @@
             tools:layout_editor_absoluteY="283dp" />
 
         <Button
-        android:id="@+id/buttonImportCard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="import"
-        tools:layout_editor_absoluteX="262dp"
-        tools:layout_editor_absoluteY="283dp" />
+            android:id="@+id/buttonImportCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="import"
+            tools:layout_editor_absoluteX="262dp"
+            tools:layout_editor_absoluteY="283dp" />
 
-    <Button
-        android:id="@+id/buttonSendCard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SendCard"
-        tools:layout_editor_absoluteY="346dp"
-        tools:layout_editor_absoluteX="262dp" />
+        <Button
+            android:id="@+id/buttonSendCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SendCard"
+            tools:layout_editor_absoluteY="346dp"
+            tools:layout_editor_absoluteX="262dp" />
 
-    <Button
-        android:id="@+id/buttonMyContact"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="MyContact"
-        tools:layout_editor_absoluteX="146dp"
-        tools:layout_editor_absoluteY="346dp" />
+        <Button
+            android:id="@+id/buttonMyContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MyContact"
+            tools:layout_editor_absoluteX="146dp"
+            tools:layout_editor_absoluteY="346dp" />
 
-    <Button
-        android:id="@+id/buttonListView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ListView"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="346dp" />
+        <Button
+            android:id="@+id/buttonListView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ListView"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="346dp" />
 
+        <Button
+            android:id="@+id/buttonVisitCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VisitCard"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="346dp" />
+
+        <Button
+            android:id="@+id/buttonFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fragment"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="346dp" />
+
+        <Button
+            android:id="@+id/buttonScan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scan"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="346dp" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
